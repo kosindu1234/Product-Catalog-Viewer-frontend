@@ -1,16 +1,40 @@
-# product_catalog_viewer
+PRODUCT CATALOG VIEWER
 
-A new Flutter project.
+This project includes a Spring Boot backend and a Flutter mobile app. The backend provides product data through REST APIs, and the Flutter app displays the product list and details.
 
-## Getting Started
+TECH USED
 
-This project is a starting point for a Flutter application.
+Backend: Java, Spring Boot, Spring Data JPA
+Frontend: Flutter, Dart, HTTP package
 
-A few resources to get you started if this is your first Flutter project:
+API ENDPOINTS
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+GET /products → Get all products
+GET /products/{id} → Get product by ID
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BACKEND CORS CONFIG
+
+Allows Flutter to access the API from any origin.
+
+FLUTTER CONNECTION
+
+Use this base URL:
+
+Android Emulator:
+http://10.0.2.2:8080
+
+Physical phone (same WiFi):
+http://192.168.1.4:8080
+
+RUN PROJECT
+
+Backend: mvn spring-boot:run
+Flutter: flutter pub get → flutter run
+
+FILES INCLUDED
+
+Spring Boot API
+
+Flutter API Service
+
+Flutter Product Model
